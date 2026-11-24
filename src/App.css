@@ -1,0 +1,115 @@
+
+.app {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.movie-details {
+  margin-bottom: 25px;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px;
+}
+
+.legend span {
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.seat-layout {
+  margin: 30px auto;
+}
+
+.screen {
+  width: 60%;
+  margin: 0 auto 35px;
+  padding: 12px;
+  background: #dbeafe;
+  border-radius: 50% 50% 5px 5px;
+  color: #1e293b;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 12px;
+}
+
+.seat {
+  width: 45px;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.available {
+  background: #64748b;
+}
+
+.selected {
+  background: #16a34a;
+}
+
+.booked {
+  background: #dc2626;
+  cursor: not-allowed;
+}
+
+.summary {
+  max-width: 450px;
+  margin: 35px auto;
+  padding: 25px;
+  background: #e2e8f0;
+  color: #1e293b;
+  border-radius: 10px;
+}
+
+.summary p {
+  margin: 12px;
+}
+
+.summary button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.summary button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .seat-row {
+    gap: 5px;
+    margin: 10px 0;
+  }
+
+  .seat {
+    width: 35px;
+    height: 32px;
+    font-size: 11px;
+  }
+
+  .legend {
+    gap: 8px;
+    font-size: 12px;
+  }
+}
